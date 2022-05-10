@@ -251,7 +251,7 @@ header {
 .box-product-slide .slide-cate .slide-cate-product {
     overflow: hidden;
     margin: 50px 117px 100px;
-    /* width: 100%; */
+    width: 100%;
     
 }
 .slide-cate li {
@@ -283,6 +283,7 @@ header {
 footer {
     background-color: #000;
 }
+#footer .list-footer li span
 #footer .list-footer li span{
     color: white;
     display: inline-block;
