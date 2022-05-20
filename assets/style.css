@@ -1,7 +1,7 @@
 /* reset css */
 * {
 
-    margin: 0;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -25,35 +25,33 @@ a {
 header {
     background-color: #000;
     height: 60px;
-
-}
-
-#head {
     position: fixed;
-    /* max-height: 60px; */
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    margin: 0 auto;
 }
 
-#head #taonon-logo {
-    width: 103px;
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head #taonon-logo {
     /* height: 35px; */
 }
 
-#head #taonon-logo a img {
+.head #taonon-logo a img {
     height: 60px;
     margin-left: 60px;
 }
 
-#nav {
+#nav-list {
     margin: 0 60px;
     float: left;
 }
 
-#nav li {
+#nav-list li {
     padding: 21px 0px 21px;
     display: inline-block;
     width: 109px;
@@ -61,54 +59,43 @@ header {
     cursor: pointer;
 }
 
-#nav li:hover {
+#nav-list li:hover {
     background-color: rgba(204, 204, 204, 0.674);
 }
 
-#nav li a {
+#nav-list li a {
     text-decoration: none;
 }
 
-#nav li a span {
+#nav-list li a span {
     font-size: 14px;
     color: #fff;
     /* line-height: 60px; */
 }
-
-
-#search-btn {
-    float: right;
-    background-color: #2f3033;
-    border-radius: 100%;
+.btn {
     width: 40px;
     height: 40px;
+    background-color: #2f3033;
     margin-top: 12px;
     margin-right: 12px;
     display: inline-block;
     cursor: pointer;
-
+    border-radius: 100%;
 }
 
-#search-btn .search-icon {
+.search-btn {
+}
+
+.btn .search-icon {
     padding: 12px;
     display: inline-block;
     color: #fff;
     font-size: 18px;
 }
 
-#cart-btn {
-    float: right;
-    background-color: #2f3033;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    margin-top: 12px;
-    margin-right: 12px;
-    display: inline-block;
-    cursor: pointer;
+.cart-btn {
 }
-
-#cart-btn .cart-icon {
+.btn .cart-icon {
     padding: 12px;
     display: inline-block;
     color: #fff;
@@ -165,20 +152,18 @@ header {
     margin: 50px 117px 80px;
 }
 
-#choose-category {
+.choose-category {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px auto 80px;
-    max-width: 1200px;
-    min-width: 1024px;
-    width: 100%;
-    margin-top: 50px;
+    /* margin: 50px auto 80px; */
+    /* max-width: 1200px;
+    min-width: 1024px; */
+    /* width: 100%; */
+    /* margin-top: 50px; */
 }
 
 .choose-category li {
-    float: left;
-    width: 15%;
     margin: 0 10px;
     border-radius: 12px;
     background: #323232;
@@ -245,14 +230,18 @@ header {
     display: block;
     text-align: center;
 }
+.box-product-slide .logo-category {
+    text-align: center;
+}
 .box-product-slide .slide-cate {
     
 }
 .box-product-slide .slide-cate .slide-cate-product {
-    overflow: hidden;
-    margin: 50px 117px 100px;
+    /* overflow: hidden; */
+    margin: 50px 0 100px;
     width: 100%;
-    
+    display: flex;
+    justify-content: center;
 }
 .slide-cate li {
     width: 280px;
