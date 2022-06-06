@@ -72,6 +72,14 @@ header {
     color: #fff;
     /* line-height: 60px; */
 }
+.head .login-btn {
+    
+}
+.head .login-btn a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 60px;
+}
 .btn {
     width: 40px;
     height: 40px;
@@ -81,9 +89,6 @@ header {
     display: inline-block;
     cursor: pointer;
     border-radius: 100%;
-}
-
-.search-btn {
 }
 
 .btn .search-icon {
@@ -277,3 +282,4 @@ footer {
     color: white;
     display: inline-block;
 }
+
