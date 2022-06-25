@@ -34,38 +34,40 @@ header {
   justify-content: space-between;
 }
 
-.header #taonon-logo a img {
+.header__logo-img {
   position: relative;
   top: 10px;
   width: 40px;
   margin-left: 60px;
 }
 
-#nav-list {
+.nav-list {
   margin: 0 60px;
-  float: left;
+  display: flex;
+  justify-content: center;
+  /* float: left; */
 }
 
-#nav-list li {
+/* .nav-item  {
   padding: 21px 0px 21px;
   display: inline-block;
   width: 109px;
   text-align: center;
   cursor: pointer;
-}
+} */
 
-#nav-list li:hover {
+.nav-item:hover {
   background-color: rgba(204, 204, 204, 0.674);
 }
 
-#nav-list li a {
+.nav-item__link {
+  padding: 21px 0 21px;
+  display: inline-block;
   text-decoration: none;
-}
-
-#nav-list li a span {
   font-size: 14px;
+  width: 108px;
   color: #fff;
-  /* line-height: 60px; */
+  text-align: center;
 }
 
 .nav-btn {
@@ -73,10 +75,12 @@ header {
   align-items: center;
 }
 .nav-btn__cart {
-    margin: 0 10px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 .nav-btn__search {
-    margin: 0 10px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 .nav-icon {
   display: block;
@@ -94,6 +98,7 @@ header {
   margin-right: 30px;
   padding: 10px 20px;
   border-radius: 20px;
+  cursor: pointer;
 }
 .login__link {
   color: #fff;
@@ -115,6 +120,7 @@ header {
 .grid__col--4 {
   width: 25%;
 }
+
 /* footer */
 .footer {
   background-color: #000;
