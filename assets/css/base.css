@@ -1,3 +1,105 @@
+/* reset css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+/* header */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #000;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header #taonon-logo a img {
+  position: relative;
+  top: 10px;
+  width: 40px;
+  margin-left: 60px;
+}
+
+#nav-list {
+  margin: 0 60px;
+  float: left;
+}
+
+#nav-list li {
+  padding: 21px 0px 21px;
+  display: inline-block;
+  width: 109px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#nav-list li:hover {
+  background-color: rgba(204, 204, 204, 0.674);
+}
+
+#nav-list li a {
+  text-decoration: none;
+}
+
+#nav-list li a span {
+  font-size: 14px;
+  color: #fff;
+  /* line-height: 60px; */
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+}
+.nav-btn__cart {
+    margin: 0 10px;
+}
+.nav-btn__search {
+    margin: 0 10px;
+}
+.nav-icon {
+  display: block;
+  padding: 12px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #2f3033;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-btn__login {
+  background-color: #2f3033;
+  margin-right: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.login__link {
+  color: #fff;
+}
+
+/* layout */
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -37,12 +139,12 @@
   color: #0071e3;
 }
 .footer__copyright {
-    display: flex;
-    justify-content: center;
-    height: 20px;
-    background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: #000;
 }
 .footer__copyrigh-text {
-    color: #fff;
-    font-size: 12px;
+  color: #fff;
+  font-size: 12px;
 }
