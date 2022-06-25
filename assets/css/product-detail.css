@@ -1,0 +1,254 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #000;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head #taonon-logo {
+  /* height: 35px; */
+}
+
+.head #taonon-logo a img {
+  height: 60px;
+  margin-left: 60px;
+}
+
+#nav-list {
+  margin: 0 60px;
+  float: left;
+}
+
+#nav-list li {
+  padding: 21px 0px 21px;
+  display: inline-block;
+  width: 109px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#nav-list li:hover {
+  background-color: rgba(204, 204, 204, 0.674);
+}
+
+#nav-list li a {
+  text-decoration: none;
+}
+
+#nav-list li a span {
+  font-size: 14px;
+  color: #fff;
+  /* line-height: 60px; */
+}
+.head .login-btn {
+}
+.head .login-btn a {
+  font-size: 14px;
+  color: #fff;
+  line-height: 60px;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  background-color: #2f3033;
+  margin-top: 12px;
+  margin-right: 12px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.btn .search-icon {
+  padding: 12px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+}
+
+.cart-btn {
+}
+.btn .cart-icon {
+  padding: 12px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* product intro */
+.introduction-detail {
+  display: flex;
+  background-color: #3e3e3f;
+}
+.center-page {
+  margin: auto;
+  display: flex;
+  min-width: 1180px;
+  max-width: 1180px;
+}
+.product-info {
+  margin-top: 100px;
+}
+.product-name {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 5px;
+  line-height: 1.2;
+  position: relative;
+}
+.price-promo-title {
+  display: inline-block;
+  margin: 16px 0;
+  color: #fff;
+}
+.product-price {
+  color: #fff;
+  padding: 16px 0;
+}
+.product-capacity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1d;
+  width: 192px;
+  height: 43px;
+  padding: 0 12px;
+  border-radius: 8px;
+}
+.product-capacity__detail {
+  color: #fff;
+  font-size: 14px;
+  cursor: default;
+}
+.product-color {
+  padding: 16px 0;
+}
+.product-color__text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: default;
+  margin-bottom: 20px;
+}
+.product-color__opt {
+    width: 40px;
+    text-decoration: none;
+}
+.product-color__opt-list {
+  display: flex;
+}
+.product-color__opt-item {
+  list-style: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: #0071e3;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.product-color__opt-item--active {
+  border: #0071e3 solid 2px;
+}
+.product-color__opt-item--gray {
+  background-color: gray;
+
+}
+.product-color__opt-item--silver {
+ background-color: silver;
+}
+.promotion-detail {
+  display: block;
+  background-color: #2f3033;
+  padding: 20px 15px 10px 15px;
+  border-radius: 12px;
+  margin: 0 0 20px;
+}
+.promotion-detail span {
+  display: block;
+  color: #fff;
+}
+.promotion-detail ul {
+  color: #fff;
+}
+.promotion-detail__title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 0 5px 6px;
+}
+.promotion-detail__time {
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+  border-bottom: 1px solid #414141;
+  padding: 0 5px 13px;
+  margin: 0 0 16px;
+}
+.promotion-detail__list {
+}
+.promotion-detail__item {
+  list-style: circle;
+  font-size: 14px;
+  line-height: 21px;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 20px);
+  font-weight: 400;
+}
+.primary-btn {
+    background-color:#0071e3 ;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    min-width: 250px;
+    min-height: 40px;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.policy-wrap {
+  margin: 8px 0;
+}
+.policy-item {
+  margin-top: 8px;
+}
+.policy-item__text, .policy-item__icon {
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+}
+.policy-item__icon {
+  font-size: 20px;
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+}
