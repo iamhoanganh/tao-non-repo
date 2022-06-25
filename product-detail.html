@@ -13,44 +13,51 @@
     />
   </head>
   <body>
-    <header>
-      <div class="head">
-        <!-- logo -->
-        <div id="taonon-logo">
-          <a href="/">
-            <!-- <i class="ti-apple"></i> -->
-          </a>
+    <header class="header">
+      <!-- logo -->
+      <div id="header__logo">
+        <a class="header__logo-link" href="/">
+          <img
+            src="./assets/img/logoapple.png"
+            alt="apple logo"
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+      <!-- navigation -->
+      <ul class="nav-list">
+        <li class="nav-item nav-iphone">
+          <a href="" class="nav-item__link">iPhone</a>
+        </li>
+        <li class="nav-item nav-mac">
+          <a href="" class="nav-item__link">Mac</a>
+        </li>
+        <li class="nav-item nav-ipad">
+          <a href="" class="nav-item__link">iPad</a>
+        </li>
+        <li class="nav-item nav-watch">
+          <a href="" class="nav-item__link">Watch</a>
+        </li>
+        <li class="nav-item nav-sound">
+          <a href="" class="nav-item__link">Âm thanh</a>
+        </li>
+        <li class="nav-item nav-accessory">
+          <a href="" class="nav-item__link">Phụ kiện</a>
+        </li>
+      </ul>
+
+      <div class="nav-btn">
+        <!-- btn cart -->
+        <div class="nav-btn__cart">
+          <i class="nav-icon ti-shopping-cart"></i>
         </div>
-        <!-- navigation -->
-        <ul id="nav-list">
-          <li class="nav-iphone">
-            <a href=""><span>iPhone</span></a>
-          </li>
-          <li class="nav-mac">
-            <a href=""><span>Mac</span></a>
-          </li>
-          <li class="nav-ipad">
-            <a href=""><span>iPad</span></a>
-          </li>
-          <li class="nav-watch">
-            <a href=""><span>Watch</span></a>
-          </li>
-          <li class="nav-sound">
-            <a href=""><span>Âm thanh</span></a>
-          </li>
-          <li class="nav-accessory">
-            <a href=""><span>Phụ kiện</span></a>
-          </li>
-        </ul>
-        <!-- button -->
-        <div class="login-btn"></div>
-        <div class="search-cart">
-          <div class="btn search-btn">
-            <i class="cart-icon ti-shopping-cart"></i>
-          </div>
-          <a href="/cart" class="btn cart-btn">
-            <i class="search-icon ti-search"></i>
-          </a>
+        <!-- btn search -->
+        <div class="nav-btn__search">
+          <i class="nav-icon ti-search"></i>
+        </div>
+        <!-- button đăng nhập -->
+        <div class="nav-btn__login">
+          <a href="" class="login__link">Đăng nhập</a>
         </div>
       </div>
     </header>
@@ -228,12 +235,12 @@
             </ul>
           </div>
         </div>
-        
       </div>
     </footer>
-      <div class="footer__copyright">
-        <p class="footer__copyrigh-text">© 2022 - Bản quyền thuộc về Công ty Táo Non</p>
-      </div>
-
+    <div class="footer__copyright">
+      <p class="footer__copyrigh-text">
+        © 2022 - Bản quyền thuộc về Công ty Táo Non
+      </p>
+    </div>
   </body>
 </html>

@@ -95,7 +95,7 @@ header {
 
 .nav-btn__login {
   background-color: #2f3033;
-  margin-right: 30px;
+  margin: 0 20px 0;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
