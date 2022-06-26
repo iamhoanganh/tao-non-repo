@@ -75,8 +75,24 @@ header {
   align-items: center;
 }
 .nav-btn__cart {
+  position: relative;
   margin: 0 10px;
   cursor: pointer;
+}
+.cart__quantity {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: #ff361d;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    width: 14px;
+    height: 14px;
+    text-align: center;
 }
 .nav-btn__search {
   margin: 0 10px;
@@ -121,7 +137,7 @@ header {
   width: 25%;
 }
 .grid__col--2 {
-    width: 50%
+  width: 50%;
 }
 /* footer */
 .footer {
