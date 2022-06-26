@@ -1,0 +1,157 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.cart-content {
+    margin: 60px auto 0;
+}
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.buymore {
+    color: black;
+    font-size: 14px;
+}
+.buymore i {
+    font-size: 12px;
+    margin-right: 2px;
+}
+.top-content span {
+    font-size: 14px;
+}
+
+/* cart */
+.middle-cart {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+}
+.cart-list {
+    padding: 20px 0;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+}
+.cart-item__info {
+    margin: 0 20px;
+}
+.cart-item__img { 
+    width: 80px;
+    margin-left: 24px;
+}
+.cart-item__name-color { 
+
+}
+.cart-item__name { 
+    font-size: 15px;
+    display: block;
+    font-weight: 400;
+}
+.cart-item__color { 
+    font-size: 15px;
+    display: block;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.cart-item__price { 
+    width: 100px;
+    margin-right: 24px;
+}
+.current-price {
+    font-weight: 600;
+    font-size: 16px;
+}
+.non-sale-price {
+    text-decoration: line-through;
+    color: #757575;
+    font-size: 14px;
+}
+/* tổng tiền */
+.total-provisional {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 17px;
+}
+.total-provisional__text { 
+    font-weight: 600;
+}
+.total-provisional__money { 
+    font-weight: 600;
+}
+/* infor */
+.customer-infor { 
+    padding: 24px;
+    border-top: #e5e5e5 solid 4px;
+    border-bottom: #e5e5e5 solid 4px;
+}
+.customer-infor h4 {
+    font-size: 15px;
+    line-height: 20px;
+}
+.customer-form { 
+    
+}
+.customer-sex { 
+    padding-top: 10px;
+}
+.customer-sex input:nth-child(2) {
+    margin-left: 20px;
+}
+.fillinform {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 5px 0;
+
+}
+
+.input-info {
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    width: 262px;
+    outline: none;
+}
+.input-info:focus {
+    border: 1px solid #fc9639;
+}
+.customer-address {
+    padding-top: 12px;
+}
+.input-long {
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+}
+.customer-note {
+    padding-top: 12px;
+}
+.submit-form {
+    padding: 10px 24px 20px;
+}
+.total-price {
+    padding-top: 20px;
+}
+
+.submit-btn {
+    background-color: #0071e3;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 12px;
+}
+.bottom-page {
+    padding: 15px 0;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}

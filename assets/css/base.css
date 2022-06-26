@@ -120,7 +120,9 @@ header {
 .grid__col--4 {
   width: 25%;
 }
-
+.grid__col--2 {
+    width: 50%
+}
 /* footer */
 .footer {
   background-color: #000;
