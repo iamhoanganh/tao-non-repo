@@ -119,7 +119,46 @@ header {
 .login__link {
   color: #fff;
 }
+.nav-user__img {
+    position: relative;
+    width: 36px;
+    border-radius: 50%;
+    margin: 0 20px 0 10px;
+    cursor: pointer;
+}
 
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top:55px;    
+    right: 20px;
+    background-color: #fff;
+    width: 166px;
+    padding: 0px 0;
+    border-radius: 8px;
+}
+.user-dropdown::before {
+    content: "";
+    display: block;
+    /* background-color: #0071e3; */
+    height: 20px;
+    width: 40px;
+    position: relative;
+    top: -20px;
+    left: 120px;
+}
+
+.user-dropdown__item {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.user-dropdown__item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-user:hover .user-dropdown {
+    display: block;
+}
 /* layout */
 .grid {
   width: 1200px;
