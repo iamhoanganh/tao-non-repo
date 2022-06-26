@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* define variable */
+:root{
+    --white-color:#fff;
+}
+
 html {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -152,6 +157,7 @@ header {
     cursor: pointer;
     padding: 10px 15px;
     font-size: 14px;
+    font-weight: 500;
 }
 .user-dropdown__item:hover {
     background-color: rgba(0, 0, 0, 0.05);
@@ -177,6 +183,9 @@ header {
 }
 .grid__col--2 {
   width: 50%;
+}
+.grid__col--3 {
+  width: 33.3333%;
 }
 /* footer */
 .footer {
