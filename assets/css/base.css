@@ -186,6 +186,9 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
+.user-dropdown__item a {
+  color: #000;
+}
 .user-dropdown__item:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
