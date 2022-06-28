@@ -67,7 +67,11 @@
 
           <!-- phần này sau khi login vào sẽ hiện -->
           <div class="nav-user">
-            <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-1/241005041_1615530828785248_189914045978877548_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=bRRSr-dANH8AX-q8wrM&_nc_ht=scontent-hkt1-2.xx&oh=00_AT8mvJFXe2d7EC-h2SY0P_7PIwxaJClyQUqmvmZ8x17oFw&oe=62BC21CF" alt="" class="nav-user__img">
+            <img
+              src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-1/241005041_1615530828785248_189914045978877548_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=bRRSr-dANH8AX-q8wrM&_nc_ht=scontent-hkt1-2.xx&oh=00_AT8mvJFXe2d7EC-h2SY0P_7PIwxaJClyQUqmvmZ8x17oFw&oe=62BC21CF"
+              alt=""
+              class="nav-user__img"
+            />
             <div class="user-dropdown">
               <ul class="user-dropdown__list">
                 <li class="user-dropdown__item">Nguyễn Hoàng Anh</li>
@@ -610,7 +614,9 @@
                   <a href="/" class="footer__item-link">Giới thiệu Táo Non</a>
                 </li>
                 <li class="footer__item">
-                  <a href="/" class="footer__item-link">Bán hàng doanh nghiệp</a>
+                  <a href="/" class="footer__item-link"
+                    >Bán hàng doanh nghiệp</a
+                  >
                 </li>
                 <li class="footer__item">
                   <a href="/" class="footer__item-link"
@@ -618,7 +624,9 @@
                   >
                 </li>
                 <li class="footer__item">
-                  <a href="/" class="footer__item-link">Tích điểm Quà tặng VIP</a>
+                  <a href="/" class="footer__item-link"
+                    >Tích điểm Quà tặng VIP</a
+                  >
                 </li>
               </ul>
             </div>
@@ -632,6 +640,28 @@
       </div>
     </div>
 
-
+    <div class="modal-search hidden">
+      <div class="search-wrap">
+        <div class="search-icon">
+          <i class="ti-search search-icon""></i>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="Tìm kiếm sản phẩm" class="search-input__fillin">
+        </div>
+        <div class="search-close">
+          <i class="ti-close search-close__icon"></i>
+        </div>
+    </div>
+    <script>
+      const modalSearch = document.querySelector('.modal-search');
+      const searchBtn = document.querySelector('.nav-btn__search');
+      const closeSearchBtn = document.querySelector('.search-close');
+      searchBtn.addEventListener('click', () => {
+        modalSearch.classList.remove('hidden')
+      })
+      closeSearchBtn.addEventListener('click', () => {
+        modalSearch.classList.add('hidden')
+      })
+    </script>
   </body>
 </html>
