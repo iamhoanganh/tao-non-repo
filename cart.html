@@ -55,7 +55,7 @@
             <i class="nav-icon ti-shopping-cart"></i>
             <div class="cart__quantity">3</div>
           </div>
-          
+
           <!-- btn search -->
           <div class="nav-btn__search">
             <i class="nav-icon ti-search"></i>
@@ -92,7 +92,10 @@
                         >Macbook Pro 14 inch M1 Pro 2021 32GB/512GB/14-Core
                         GPU</span
                       >
-                      <span class="cart-item__color">Màu: Bạc</span>
+                      <div class="cart-item__color-del-wrap">
+                        <span class="cart-item__color">Màu: Bạc</span>
+                        <button class="cart-item__delete">Xoá</button>
+                      </div>
                     </div>
                   </div>
                   <div class="cart-item__price">
@@ -152,39 +155,56 @@
               <div class="customer-infor">
                 <h4>Thông tin khách hàng</h4>
                 <form action="" class="customer-form">
-                    <div class="customer-sex">
-                        <input type="radio"> Nam
-                        <input type="radio"> Nữ
+                  <div class="customer-sex">
+                    <input type="radio" /> Nam <input type="radio" /> Nữ
+                  </div>
+                  <div class="fillinform">
+                    <div class="customer-name">
+                      <input
+                        type="text"
+                        placeholder="Tên của bạn"
+                        class="input-info"
+                      />
                     </div>
-                    <div class="fillinform">
-                        <div class="customer-name">
-                            <input type="text" placeholder="Tên của bạn" class="input-info"> 
-                        </div>
-                        <div class="customer-phonenumber">
-                            <input type="text" placeholder="Số điện thoại" class="input-info"> 
-                        </div>
+                    <div class="customer-phonenumber">
+                      <input
+                        type="text"
+                        placeholder="Số điện thoại"
+                        class="input-info"
+                      />
                     </div>
-                    <div class="customer-address">
-                        <input type="text" placeholder="Địa chỉ" class="input-long">
-                    </div>
-                    <div class="customer-note">
-                        <input type="text" placeholder="Ghi chú" class="input-long">
-                    </div>
+                  </div>
+                  <div class="customer-address">
+                    <input
+                      type="text"
+                      placeholder="Địa chỉ"
+                      class="input-long"
+                    />
+                  </div>
+                  <div class="customer-note">
+                    <input
+                      type="text"
+                      placeholder="Ghi chú"
+                      class="input-long"
+                    />
+                  </div>
                 </form>
               </div>
               <!-- submit form -->
               <div class="submit-form">
                 <div class="total-provisional total-price">
-                    <span class="total-provisional__text">Tổng tiền:</span>
-                    <span class="total-provisional__money">180.000.000đ</span>
+                  <span class="total-provisional__text">Tổng tiền:</span>
+                  <span class="total-provisional__money">180.000.000đ</span>
                 </div>
                 <button class="submit-btn">Đặt hàng</button>
-
               </div>
             </div>
-            
-            <span class="bottom-page">Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của TopZone</span>
-        </div>
+
+            <span class="bottom-page"
+              >Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của
+              TopZone</span
+            >
+          </div>
         </div>
       </div>
     </div>

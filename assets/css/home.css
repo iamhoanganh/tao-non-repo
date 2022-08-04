@@ -51,7 +51,7 @@
 
 .choose-category {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* margin: 50px auto 80px; */
     /* max-width: 1200px;

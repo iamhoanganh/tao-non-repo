@@ -50,11 +50,23 @@ body {
     display: block;
     font-weight: 400;
 }
+
+.cart-item__color-del-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .cart-item__color { 
     font-size: 15px;
     display: block;
     font-weight: 400;
     margin-top: 12px;
+}
+.cart-item__delete {
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .cart-item__price { 
     width: 100px;
