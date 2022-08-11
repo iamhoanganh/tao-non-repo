@@ -160,7 +160,9 @@ body {
     font-weight: 600;
     width: 100%;
     border-radius: 12px;
+    cursor: pointer;
 }
+
 .bottom-page {
     padding: 15px 0;
     font-size: 12px;
