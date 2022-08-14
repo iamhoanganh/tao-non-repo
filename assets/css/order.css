@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .container {
   margin-top: 60px;
   background-color: #f0f0f0;
@@ -5,8 +8,8 @@
   padding-bottom: 50px;
 }
 .top-content span {
-    margin: 10px 0;
-    display: block;
+  margin: 10px 0;
+  display: block;
 }
 .middle-content {
   background-color: white;
@@ -17,9 +20,9 @@
   padding: 0;
 }
 .order-item {
-    padding: 25px 0;
-    /* border-radius: 12px; */
-    border-bottom: #f0f0f0 solid 10px;
+  padding: 25px 0;
+  /* border-radius: 12px; */
+  border-bottom: #f0f0f0 solid 10px;
 }
 .order-item:last-child {
   border-bottom: none;
@@ -94,4 +97,20 @@
   margin: 10px 24px;
   display: flex;
   justify-content: space-between;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
