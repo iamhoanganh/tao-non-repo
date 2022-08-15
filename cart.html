@@ -81,11 +81,34 @@
             <div class="middle-cart">
               <ul class="cart-list">
                 <li class="cart-item">
-                  <img
-                    src="./assets/img/mac/Macbook Pro 14/macbook-pro-14-inch-m1-pro-2021-xam-1-650x650.png"
-                    alt=""
-                    class="cart-item__img"
-                  />
+                  <div class="cart-item__img-quantity">
+                    <img
+                      src="./assets/img/mac/Macbook Pro 14/macbook-pro-14-inch-m1-pro-2021-xam-1-650x650.png"
+                      alt=""
+                      class="cart-item__img"
+                    />
+                    <div class="cart-item__quantity">
+                      <div
+                        class="cart-item__quantity-sign minus decrease-btn-js"
+                      >
+                        <i
+                          class="ti-minus minus-icon "
+                        ></i>
+                      </div>
+                      <input
+                        type="text"
+                        maxlength="2"
+                        class="cart-item__quantity-input quantity-input-js"
+                        style="border: none; pointer-events: all"
+                        value="1"
+                      />
+                      <div
+                        class="cart-item__quantity-sign plus increase-btn-js"
+                      >
+                        <i class="ti-plus plus-icon"></i>
+                      </div>
+                    </div>
+                  </div>
                   <div class="cart-item__info">
                     <div class="cart-item__name-color">
                       <span class="cart-item__name"
@@ -201,12 +224,29 @@
             </div>
 
             <span class="bottom-page"
-              >Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của
-              Táo Non</span
+              >Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của Táo
+              Non</span
             >
           </div>
         </div>
       </div>
     </div>
+    <script>
+      const increaseBtnEl = document.querySelector(".increase-btn-js");
+      const decreaseBtnEl = document.querySelector(".decrease-btn-js");
+      const quantityInputEl = document.querySelector(".quantity-input-js");
+      var quantityProduct = quantityInputEl.attributes.value.nodeValue;
+      console.log();
+
+      increaseBtnEl.addEventListener("click", function () {
+        if (quantityInputEl.attributes.value.nodeValue == 99) {
+          increaseBtnEl.children[0].classList.add("cart-item__quantity-sign--disable")
+        }
+        quantityInputEl.attributes.value.nodeValue++;
+      });
+      decreaseBtnEl.addEventListener("click", function () {
+        quantityInputEl.attributes.value.nodeValue--;
+      });
+    </script>
   </body>
 </html>
