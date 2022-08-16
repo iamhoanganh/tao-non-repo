@@ -5,6 +5,7 @@
   border-radius: 20px;
   border: 1px solid #ccc;
   text-align: center;
+  width: 558px;
 }
 .form-infor {
   display: flex;
@@ -22,8 +23,7 @@
   align-items: center;
   margin: 0 auto;
 }
-.infor-user {
-}
+
 .infor-persional-title {
   margin-bottom: 20px;
   display: block;
@@ -59,19 +59,17 @@
   border-radius: 12px;
   border: 1px solid #e5e5e5;
   font-size: 15px;
-  width: 262px;
+  min-width: 262px;
   outline: none;
   margin-left: 20px;
 }
-.form-address__input {
-    flex: 2;
-}
+
 .change-password-input {
   padding: 15px;
   border-radius: 12px;
   border: 1px solid #e5e5e5;
   font-size: 15px;
-  width: 262px;
+  min-width: 262px;
   outline: none;
 }
 .submit-btn {
